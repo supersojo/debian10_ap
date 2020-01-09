@@ -63,7 +63,7 @@ ethtool -s ens5 wol g # Support wol for wired interface
 #cat /etc/network/interfaces.d/ens5
 ```
 auto wls1b1
-iface wls1b1 inet manua
+iface wls1b1 inet manual
 ```
 ## 4. Enable and start hostapd
 ```
