@@ -29,9 +29,12 @@ macaddr_acl=0
 ```
 ## 3. The network settings
 #ls /etc/network/interfaces.d/
+```
 ens5 wls1b1 br0
+```
 
 #cat /etc/network/interfaces.d/br0
+```
 auto br0
 
 iface br0 inet static
@@ -45,25 +48,23 @@ network 192.168.3.0
 netmask 255.255.255.0
 
 gateway 192.168.3.1
+```
 
-Note:
+*Note:*
 Make sure that in file /etc/resolv.conf
 nameserver 192.168.3.1
 
 #cat /etc/network/interfaces.d/ens5
-
+```
 auto ens5
-
 iface ens5 inet manual
-
 ethtool -s ens5 wol g # Support wol for wired interface
-
+```
 #cat /etc/network/interfaces.d/ens5
-
+```
 auto wls1b1
-
 iface wls1b1 inet manualo
-
+```
 ## 4. Enable and start hostapd
 
 systemctl unmask hostapd
