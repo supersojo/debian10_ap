@@ -11,18 +11,18 @@ DEAMON_CONF="/etc/hostapd/hostapd.conf"
 
 ## 2. cat /etc/hostapd/hostapd.conf
 
-interface=wls1b1
+interface=wls1b1 # Your wifi interface name
 
-bridge=br0 # Use bridge mode
+bridge=br0 # Use bridge mode, so no need to install dnsmasq
 
 driver=nl80211 # Must set this
 
-country_code=CN
+country_code=CN # Your country code
 ssid=MERCURY_SUYU3 # Your SSID
-hw_mode=g
+hw_mode=g 
 channel=6
 wpa=2
-wpa_passphrase=chenguanxi # Your pass
+wpa_passphrase=xxxx # Your pass
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
@@ -59,7 +59,7 @@ auto ens5
 
 iface ens5 inet manual
 
-ethtool -s ens5 wol g
+ethtool -s ens5 wol g # Support wol for wired interface
 
 #cat /etc/network/interfaces.d/ens5
 
