@@ -1,7 +1,7 @@
 # debian10 ap setting
 =======================================
 
-- 1) Install hostapd package
+- Install hostapd package
 
 apt install hostapd
 
@@ -9,7 +9,7 @@ In /etc/default/hostapd,uncomment DEAMON_CONF
 
 DEAMON_CONF="/etc/hostapd/hostapd.conf"
 
-- 2) cat /etc/hostapd/hostapd.conf
+- cat /etc/hostapd/hostapd.conf
 
 interface=wls1b1
 
