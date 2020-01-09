@@ -77,7 +77,7 @@ systemctl start hostapd
 
 
 ## 6. The network topology
-
+```
 M150R (dhcp server) 192.168.3.1
          ||
 br0 ---ens5
@@ -85,7 +85,6 @@ br0 ---ens5
         |\
         | +-- dev
       dev 
-
-
+```
 All connected devs will get IP&dns from M150R.
 
