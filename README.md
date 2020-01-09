@@ -1,7 +1,7 @@
 # debian10 ap setting
-=======================================
 
-- Install hostapd package
+
+## 1. Install hostapd package
 
 apt install hostapd
 
@@ -9,7 +9,7 @@ In /etc/default/hostapd,uncomment DEAMON_CONF
 
 DEAMON_CONF="/etc/hostapd/hostapd.conf"
 
-- cat /etc/hostapd/hostapd.conf
+## 2. cat /etc/hostapd/hostapd.conf
 
 interface=wls1b1
 
@@ -30,7 +30,7 @@ bridge=br0 # Bind to which bridge
 auth_algs=1
 macaddr_acl=0
 
-* 3) The network settings
+## 3. The network settings
 #ls /etc/network/interfaces.d/
 ens5 wls1b1 br0
 
@@ -67,7 +67,7 @@ auto wls1b1
 
 iface wls1b1 inet manualo
 
-* 4) Enable and start hostapd
+## 4. Enable and start hostapd
 
 systemctl unmask hostapd
 systemctl daemon-reload
@@ -75,10 +75,10 @@ systemctl enable hostapd
 systemctl start hostapd
 
 
-* 5) Happy to use AP now.
+## 5. Happy to use AP now.
 
 
-* 6) The network topology
+## 6. The network topology
 
 M150R (dhcp server) 192.168.3.1
          ||
