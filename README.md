@@ -86,5 +86,5 @@ br0 ---ens5
         | +-- dev
       dev 
 ```
-All connected devs will get IP&dns from M150R.
+All connected devices will get IP&dns from M150R.
 
