@@ -10,13 +10,10 @@ In /etc/default/hostapd,uncomment DEAMON_CONF
 DEAMON_CONF="/etc/hostapd/hostapd.conf"
 
 ## 2. cat /etc/hostapd/hostapd.conf
-
+```
 interface=wls1b1 # Your wifi interface name
-
 bridge=br0 # Use bridge mode, so no need to install dnsmasq
-
 driver=nl80211 # Must set this
-
 country_code=CN # Your country code
 ssid=MERCURY_SUYU3 # Your SSID
 hw_mode=g 
@@ -29,7 +26,7 @@ rsn_pairwise=CCMP
 bridge=br0 # Bind to which bridge
 auth_algs=1
 macaddr_acl=0
-
+```
 ## 3. The network settings
 #ls /etc/network/interfaces.d/
 ens5 wls1b1 br0
