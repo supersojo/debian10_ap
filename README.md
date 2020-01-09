@@ -2,14 +2,21 @@
 =======================================
 
 * 1) Install hostapd package
+
 apt install hostapd
+
 In /etc/default/hostapd,uncomment DEAMON_CONF
+
 DEAMON_CONF="/etc/hostapd/hostapd.conf"
 
 * 2) cat /etc/hostapd/hostapd.conf
+
 interface=wls1b1
+
 bridge=br0 # Use bridge mode
+
 driver=nl80211 # Must set this
+
 country_code=CN
 ssid=MERCURY_SUYU3 # Your SSID
 hw_mode=g
