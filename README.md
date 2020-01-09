@@ -88,3 +88,5 @@ br0 ---ens5
 ```
 All connected devices will get IP&dns from M150R.
 
+## reference
+[how-to-setup-access-point-wifi-hotspot-on-debian](https://superuser.com/questions/748455/how-to-setup-access-point-wifi-hotspot-on-debian)
