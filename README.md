@@ -1,4 +1,4 @@
-# debian10 ap setting
+# debian10 as ap using hostapd
 
 
 ## 1. Install hostapd package
@@ -87,6 +87,11 @@ br0 ---ens5
       dev 
 ```
 All connected devices will get IP&dns from M150R.
+
+## 7. Notes
+AP network speed is low, after instal newest kernel from source.
+network speed is ok. Maybe wifi driver in debian 10 is not very good for my notebook.
+Anyway when using the newest kernel is a must.
 
 ## reference
 [how-to-setup-access-point-wifi-hotspot-on-debian](https://superuser.com/questions/748455/how-to-setup-access-point-wifi-hotspot-on-debian)
